@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#0081d5</color> //-->
+    <color name="colorPrimary">#9F9FA0</color>
+    <color name="colorPrimaryDark">#173553</color>
+    <color name="colorPrimaryLight">#5686AF</color>
+    <color name="colorAccent">#0081d5</color>
+    <color name="colorBackground">#0C273D</color>
+    <color name="colorStatusBarLight">#345069</color>
+
+
+    <color name="themeDarkPrimary">#154F83</color>
+    <!-- <color name="themeDarkAccent">#EF4CEB07</color> //-->
+    <color name="themeDarkAccent">@color/colorArfcnRunning</color>
+    <color name="themeDarkBackground">#0C273D</color>
+    <color name="themeDarkText">#FFFFFF</color>
+    <!--
+    <color name="colorAccent">#FF4081</color>
+    //-->
+    <!--
+    <color name="colorArfcnRunning">#07cd65</color>
+    <color name="colorArfcnBlank">#80BCBCBC</color>
+    <color name="colorArfcnInvalid">#80D1335B</color>
+    <color name="colorArfcnValid">#802390D3</color>
+     //-->
+
+    <color name="colorArfcnRunningLight">#FF4CEB07</color>
+    <color name="colorArfcnRunning">#FF4CAA05</color>
+    <color name="colorArfcnBlank">#FFB7BFC5</color>
+    <color name="colorArfcnInvalid">#BFE62725</color>
+    <color name="colorArfcnValid">#FFB7BFC5</color>
+    <color name="colorArfcnDisabled">#FFB7BFC5</color>
+</resources>

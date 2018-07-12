@@ -1,0 +1,71 @@
+buildscript {
+    
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.3'
+    }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = "GdxAR"
+        gdxVersion = '1.9.6'
+        roboVMVersion = '2.3.3'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://maven.google.com" }
+    }
+}
+
+
+project(":android") {
+    apply plugin: "android"
+
+    configurations { natives }
+
+    dependencies {
+        compile project(":core")
+        compile "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-arm64-v8a"
+
+        compile 'com.android.support:design:25.3.1'
+        compile 'com.android.support.constraint:constraint-layout:1.0.2'
+        compile 'com.android.support:appcompat-v7:27.0.2'
+        compile 'com.android.support:multidex:1.0.1'
+
+        compile "com.google.ar:core:1.3.0"
+        //compile 'com.google.ar.sceneform:core:1.3.0'
+        //compile 'com.google.ar.sceneform.ux:sceneform-ux:1.3.0'
+    }
+}
+
+project(":core") {
+    apply plugin: "java"
+
+
+    dependencies {
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        
+    }
+}
+
+tasks.eclipse.doLast {
+    delete ".project"
+}

@@ -1,0 +1,22 @@
+
+Instructions on Using the Keystore file to Sign App Release APK
+ 
+============================================================================
+
+1. Create a file called  "keysigning.properties"
+
+2. Fill in the created file with the following
+
+keystoreFile=./keys/app-release.keystore.jks
+keystorePassword=KEY_IN_THE_KEYSTORE_PASSWORD
+keyAlias=app-release
+keyPassword=KEY_IN_THE_KEY_PASSWORD
+
+* May reference file "keysigning-skeleton.properties" to create file
+  "keysigning.properties"
+
+
+3. Replace KEY_IN_THE_KEYSTORE_PASSWORD with the actual keystore password
+
+4. Replace KEY_IN_THE_KEY_PASSWORD with the actual key password
+

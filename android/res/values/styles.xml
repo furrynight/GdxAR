@@ -1,0 +1,53 @@
+<resources>
+
+    <style name="GdxTheme" parent="android:Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorArfcnRunning</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat">
+        <item name="android:colorBackground">@color/themeDarkBackground</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="colorPrimary">@color/themeDarkPrimary</item>
+        <item name="colorAccent">@color/themeDarkAccent</item>
+        <item name="android:textColorPrimary">@color/themeDarkText</item>
+        <item name="android:textColorPrimaryInverse">@color/themeDarkText</item>
+        <item name="android:textColorSecondary">@color/themeDarkText</item>
+        <item name="android:textColorSecondaryInverse">@color/themeDarkText</item>
+        <item name="android:windowBackground">@color/themeDarkBackground</item>
+        <item name="colorPrimaryDark">@color/themeDarkPrimary</item>
+    </style>
+
+    <style name="AppThemeDark.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/themeDarkPrimary</item>
+        <item name="android:colorBackground">@color/themeDarkBackground</item>
+        <item name="colorAccent">@color/themeDarkAccent</item>
+        <item name="android:textColorPrimary">@color/themeDarkText</item>
+        <item name="colorPrimaryDark">@color/themeDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/themeDarkText</item>
+        <item name="android:textColorSecondary">@color/themeDarkText</item>
+        <item name="android:textColorSecondaryInverse">@color/themeDarkText</item>
+        <item name="android:windowBackground">@color/themeDarkBackground</item>
+    </style>
+</resources>
